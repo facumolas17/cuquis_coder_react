@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: black !important;
+  font-weight: 500;
+  padding: 0 15px !important;
+}
+
+.nav-link:hover{
+  color:rgba(0, 0, 0, 0.438)!important;
+  transition: .6s all;
+}
+
+.img-logo{
+  max-width: 200px;
+  max-height: 100px;
+  
+}
