@@ -12,7 +12,7 @@ const Productos = () => {
         .then(response => setData(response.results))
         .catch(err => console.log("error"))
 
-        console.log(data);
+        
     },[]);
 
     
@@ -22,7 +22,7 @@ const Productos = () => {
             <h2>Productos:</h2>
             <ul>
             {   
-                data.length > 0 ?
+                data.lenght > 0 ?
                 data.map(item => (
                     <li>{item.title}</li>
                 )) :
