@@ -7,7 +7,7 @@ const Productos = () => {
     useEffect(()=>{
 
         fetch('https://api.mercadolibre.com/sites/MLA/search?q=mate')
-        .then(response => response.json)
+        .then(response => response.json())
         .then(response => setData(response.results))
         .catch(err => console.log(err))
 
