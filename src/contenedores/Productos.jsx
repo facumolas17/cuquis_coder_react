@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Productos = () => {
 
-    const [data, setData]=useState();
+    const [data, setData]=useState([]);
     
 
     useEffect(()=>{
@@ -22,14 +22,15 @@ const Productos = () => {
             <h2>Productos:</h2>
             <ul>
             {   
-                data.lenght > 0 ?
-                data.map(item => (
-                    <li>{item.title}</li>
-                )) :
+                data.length > 0 ? (
+                data.map((item) => {
+                    return <li key={item.id}>{item.title}</li>;
+                })
+                ) : (
                 <p>Cargando...</p>
 
 
-            }
+                )}
             </ul>
     </>
   )
